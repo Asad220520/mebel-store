@@ -53,13 +53,14 @@
       justify-content: space-between;
       align-items: center;
 
+
       &__search {
         display: flex;
         align-items: center;
         gap: 20px;
         width: 70%;
-        height: 50px;
         flex-shrink: 0;
+        padding: 10px 15px;
         border: 1px solid #E6E6E6;
 
         .search {
@@ -86,11 +87,13 @@
 
   #header-senior {
     .header-senior {
-      padding: 20px 30px;
+      padding: 25px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      background: #FFF;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07);
+      margin-bottom: 30px;
       &__nav {
         display: flex;
         align-items: center;
