@@ -1,0 +1,17 @@
+#product {
+  h1 {
+    padding: 30px 0;
+    color: var(--text-color, #414141);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+  }
+}
