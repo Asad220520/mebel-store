@@ -8,6 +8,7 @@ const Footer = () => {
     <div id="footer">
       <div className="container">
         <h1>НАВИГАЦИЯ</h1>
+        <img src={logo} alt="" />
         <div className="footer">
           <nav className="nav">
             <div className="nav__block">

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 import { CiHeart, CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
 import delivery from "../../icons/delivery-icon.svg";
 import phone from "../../icons/phone.svg";
 import logo from "../../icons/LOGO.svg";
@@ -39,7 +40,10 @@ const Header = () => {
         <div className="container">
           <div className="header-middle">
             <div className="header-middle__icon">
-              <img src={logo} alt="" />
+              <RxHamburgerMenu className="iconburger" />
+              <Link to={"/"}>
+                <img src={logo} alt="" />
+              </Link>
             </div>
             <div className="header-middle__search">
               <CiSearch className="search" />
@@ -47,9 +51,21 @@ const Header = () => {
             </div>
             <div className="header-middle__bar">
               <CiHeart className="header-middle__icon" />
-              <CiShoppingCart className="header-middle__icon" />
+
+              <NavLink to={"/basket"}>
+                <div className="header-middle__iconcart">
+                  {/* {basket.length ? (
+                    <sub className="subcart">{basket.length}</sub>
+                  ) : null} */}
+                  <CiShoppingCart className="header-middle__icon" />
+                </div>
+              </NavLink>
               <CiUser className="header-middle__icon" />
             </div>
+          </div>
+          <div className="header-middle__search2">
+            <CiSearch className="search" />
+            <input type="search" placeholder="Поиск" />
           </div>
         </div>
       </div>

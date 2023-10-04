@@ -15,3 +15,27 @@
     grid-gap: 20px;
   }
 }
+
+@media (max-width:965px) {
+  #product {
+    h1 {}
+
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width:555px) {
+  #product {
+    h1 {}
+
+    .product {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}

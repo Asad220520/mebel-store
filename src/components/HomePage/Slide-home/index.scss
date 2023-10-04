@@ -1,4 +1,6 @@
 #slideHome {
+  padding-top: 250px;
+
   .slideHome {
     &__img {
       .slideText {
@@ -50,6 +52,7 @@
       .swiper-rtl .swiper-button-next {
         left: 40px;
         right: auto;
+        color: gray;
       }
 
       .swiper-button-next,
@@ -77,6 +80,108 @@
         width: 100%;
         min-height: 450px;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  #slideHome {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 830px) {
+  #slideHome {
+    .slideHome {
+      &__img {
+        .slideText {
+          h1 {
+            font-size: 40px;
+          }
+
+          p {}
+
+          button {}
+
+
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+          top: 370px;
+          right: 80px;
+          left: auto;
+          color: gray;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+          top: 370px;
+          right: 40px;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  #slideHome {
+    .slideHome {
+      &__img {
+        .slideText {
+          h1 {
+            font-size: 30px;
+            padding: 0 30px;
+          }
+
+          p {
+            padding: 20px 30px;
+          }
+
+          button {
+            margin: 0 30px;
+          }
+
+
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+          top: 370px;
+          right: 80px;
+          left: auto;
+          color: gray;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+          top: 370px;
+          right: 40px;
+          left: auto;
+        }
+
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          width: 30px;
+          height: 30px;
+          flex-shrink: 0;
+          background: #FFF;
+          text-transform: none !important;
+          letter-spacing: 0;
+        }
+
+        img {
+          width: 100%;
+          min-height: 450px;
+          object-fit: cover;
+        }
       }
     }
   }
