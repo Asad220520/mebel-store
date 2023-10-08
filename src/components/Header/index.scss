@@ -130,7 +130,13 @@
       &__nav {
         display: flex;
         align-items: center;
+        padding: 12px 12px;
         gap: 10px;
+        // &:hover {
+        //   background: var(--main-color, #245462);
+        //   color: #fff;
+        // }
+
 
         h1 {
           font-size: 15px;

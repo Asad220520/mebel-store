@@ -12,7 +12,11 @@ import closet from "../../icons/closet-icon.svg";
 import office from "../../icons/office-icon.svg";
 import childrensroom from "../../icons/childrensroom-icon.svg";
 import etc from "../../icons/etc.svg";
+import { useAppSelector } from "../../hooks/hooks";
 const Header = () => {
+  const { basket } = useAppSelector((s) => s.basket);
+  const { favorite } = useAppSelector((s) => s.favorite);
+
   return (
     <div className="wrapper">
       <div id="header">
@@ -50,17 +54,26 @@ const Header = () => {
               <input type="search" placeholder="Поиск" />
             </div>
             <div className="header-middle__bar">
-              <CiHeart className="header-middle__icon" />
+              <NavLink to={"/favorite"}>
+                <div className="header-middle__iconcart">
+                  {favorite.length ? (
+                    <sub className="subcart">{favorite.length}</sub>
+                  ) : null}
+                  <CiHeart className="header-middle__icon" />
+                </div>
+              </NavLink>
 
               <NavLink to={"/basket"}>
                 <div className="header-middle__iconcart">
-                  {/* {basket.length ? (
+                  {basket.length ? (
                     <sub className="subcart">{basket.length}</sub>
-                  ) : null} */}
+                  ) : null}
                   <CiShoppingCart className="header-middle__icon" />
                 </div>
               </NavLink>
-              <CiUser className="header-middle__icon" />
+              <NavLink to={"/auth"}>
+                <CiUser className="header-middle__icon" />
+              </NavLink>
             </div>
           </div>
           <div className="header-middle__search2">
