@@ -8,9 +8,7 @@ const Product = () => {
         <h1>Хиты продаж</h1>
         <div className="product">
           {data.map((el) => (
-            <div>
-              <ProductCart el={el} key={el.id} />
-            </div>
+            <ProductCart el={el} key={el.id} />
           ))}
         </div>
       </div>

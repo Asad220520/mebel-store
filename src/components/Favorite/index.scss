@@ -1,0 +1,7 @@
+#favorite {
+  padding-top: 250px;
+  .favorite {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+}

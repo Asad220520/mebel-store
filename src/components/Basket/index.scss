@@ -4,6 +4,43 @@
   padding-top: 250px;
 }
 
+.quantity {
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: center;
+
+  h2 {
+    color: var(--text-color, #414141);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    span {
+      color: var(--text-color, #414141);
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  button {
+    background: var(--main-color, #245462);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 13px 50px;
+  }
+}
+
 .basket {
   display: flex;
   justify-content: space-between;
